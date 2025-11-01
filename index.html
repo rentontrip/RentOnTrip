@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ABC App - Rent Bikes, Cars, Cameras & More</title>
+  <link rel="icon" type="image/x-icon" href="RentOnTripIcon_compressed.png">
+  <title>RentOnTrip App - Rent Bikes, Cars, Cameras & More</title>
   <style>
     body {
       font-family: "Poppins", sans-serif;
@@ -22,9 +23,14 @@
       font-size: 1.2em;
       margin-bottom: 30px;
     }
+    
+    .logo-size{
+        width: 45px;
+    }
 
     .download-btn {
-      display: inline-block;
+      display: flex;
+      flex-direction: row;
       background-color: #34a853;
       color: white;
       padding: 15px 30px;
@@ -58,9 +64,12 @@
   <p>Rent bikes, cars, cameras, dresses, and more — perfect for your travel adventures!</p>
 
   <!-- Replace the Play Store link below with your real app link -->
-  <a href="https://play.google.com/store/apps/details?id=com.prthatech.utilcart" target="_blank" class="download-btn">
-    🚀 Download RentOnTrip App on Play Store
-  </a>
+  <div class="download-btn">
+       <img class="logo-size" src="RentOnTripIcon_compressed.png"></img>
+    <a href="https://play.google.com/store/apps/details?id=com.prthatech.utilcart" target="_blank" >
+         Download RentOnTrip App on Play Store
+    </a>
+   </div>
 
   <footer>© 2025 RentOnTrip App. All rights reserved.</footer>
 </body>
