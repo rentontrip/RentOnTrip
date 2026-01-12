@@ -2,91 +2,268 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="RentOnTripIcon_compressed.png">
-    <title>RentOnTrip App - Rent Bikes, Cars, Cameras & More</title>
-    <style>
-        body {
-            font-family: "Poppins", sans-serif;
-            background: linear-gradient(to right, #2b5876, #4e4376);
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RentOnTrip – One App. All Rentals.</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f8fafc;
+      color: #1f2933;
+    }
 
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
+    header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
 
-        p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      position: relative;
+      display: inline-block;
+      overflow: visible;
+    }
 
-        .logo-size {
-            width: 45px;
-        }
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
 
-        .download-btn {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            /* centers content inside */
-            background-color: #34a853;
-            color: white;
-            padding: 15px 30px;
-            font-size: 1.1em;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: 0.3s;
-            width: 300px;
-            margin: 0 auto;
-            /* centers the whole button horizontally */
-            gap: 10px;
-            /* space between logo and text */
-        }
+    .cta {
+      display: inline-block;
+      background: #22c55e;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
 
-        .download-btn:hover {
-            background-color: #2c8c46;
-        }
+    .cta:hover {
+      background: #16a34a;
+    }
 
-        .download-btn a {
-            color: white;
-            text-decoration: none;
-        }
+    section {
+      padding: 70px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-        .app-image {
-            margin-top: 30px;
-            max-width: 300px;
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-        }
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
 
-        footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #ddd;
-        }
-    </style>
+    .section-title h2 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px;
+      font-size: 1.4rem;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer p {
+      margin: 8px 0;
+    }
+
+    .car {
+      top: 275px;
+      width: 400px;
+      left: -200px;
+      position: absolute;
+      z-index: 2;
+      animation: driveAcross 6s ease-in-out infinite;
+    }
+
+    .car-img {
+      width: 50%;
+      animation: carBounce 1s linear infinite;
+    }
+
+    @keyframes driveAcross {
+      0% {
+        left: -200px;
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        left: calc(100% + 200px);
+        opacity: 0;
+      }
+    }
+
+    @keyframes carBounce {
+      0%, 100% {
+        transform: translateY(-1px);
+      }
+      50% {
+        transform: translateY(1px);
+      }
+    }
+
+    .wheel {
+      position: absolute;
+      z-index: 2;
+      animation: driveAcross 6s ease-in-out infinite;
+    }
+    
+    .wheel img {
+      width: 36px;
+      height: 36px;
+      animation: wheelRotate 0.5s linear infinite;
+    }
+    
+    .front-wheel {
+      top: 142px;
+      left: 240px;
+      position: absolute;
+    }
+
+    .back-wheel {
+      top: 142px;
+      left: 120px;
+      position: absolute;
+    }
+
+    @keyframes wheelRotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 
 <body>
-    <h1>Explore Mysore with RentOnTrip App</h1>
-    <p>Rent bikes, cars, cameras, dresses, and more — perfect for your travel adventures!</p>
 
-    <!-- Replace the Play Store link below with your real app link -->
-    <div class="download-btn">
-        <img class="logo-size" src="RentOnTripIcon_compressed.png"></img>
-        <a href="https://play.google.com/store/apps/details?id=com.prthatech.utilcart" target="_blank">
-            Download RentOnTrip App on Play Store
-        </a>
+  <header>
+    <h1>RentOnTrip</h1>
+    <div class="car">
+      <img src="car.png" class="car-img" alt="Car">
+    </div>
+    <div class="wheel">
+        <img src="wheel.png" class="front-wheel" alt="Wheel">
+        <img src="wheel.png" class="back-wheel" alt="Wheel">
+      </div>
+    <p>Your unified rental platform for bikes, cars, and fashion rentals – all in one app.</p>
+    <a class="cta" href="https://play.google.com/store/apps/details?id=com.prthatech.utilcart" target="_blank">Download From
+      Play Store</a>
+  </header>
+
+  <section>
+    <div class="section-title">
+      <h2>What You Can Rent</h2>
+      <p>Everything you need for your trip or special occasion</p>
     </div>
 
-    <footer>© 2025 RentOnTrip App. All rights reserved.</footer>
+    <div class="grid">
+      <div class="card">
+        <img src="dress_rentals.jpg" alt="Dress Rentals">
+        <div class="card-content">
+          <h3>Dress Rentals</h3>
+          <p>Traditional wear, party dresses, and designer outfits at affordable prices.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="bike_rentals.png" alt="Bike Rentals">
+        <div class="card-content">
+          <h3>Bike Rentals</h3>
+          <p>Explore the city or highways with well-maintained bikes on flexible plans.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="car_rentals.jpeg" alt="Car Rentals">
+        <div class="card-content">
+          <h3>Car Rentals</h3>
+          <p>Comfortable and reliable cars for trips, events, or daily use.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#eef2ff;">
+    <div class="section-title">
+      <h2>Why RentOnTrip?</h2>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="card-content">
+          <h3>One App, Multiple Rentals</h3>
+          <p>No more switching platforms. Rent bikes, cars, and dresses from one app.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3>Trusted Vendors</h3>
+          <p>Verified partners ensuring quality, safety, and fair pricing.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3>Affordable & Flexible</h3>
+          <p>Hourly, daily, and occasion-based rentals to suit your needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 RentOnTrip. All rights reserved.</p>
+    <p>One platform. Endless rentals.</p>
+  </footer>
+
 </body>
 
 </html>
