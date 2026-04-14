@@ -4,38 +4,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Car, Bike &amp; Dress Rentals in Mysore | RentOnTrip</title>
+  <title>Self-drive Cars, Bikes &amp; Dress Rentals in Mysore | RentOnTrip</title>
   <meta name="description"
-    content="RentOnTrip is Mysore’s unified rental app for cars, bikes, and dresses—browse catalogs from local vendors and compare by price, model, and more. Based near Ballal Circle. Download on the Play Store." />
+    content="RentOnTrip is Mysore’s unified rental app for self-drive cars and bikes, plus dress rentals—browse catalogs from local vendors and compare by price, model, and more. Based near Ballal Circle. Download on the Play Store." />
   <link rel="canonical" href="https://rentontrip.com/" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png" />
+  <link rel="apple-touch-icon" href="images/favicon-96x96.png" />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://rentontrip.com/" />
-  <meta property="og:title" content="Car, Bike &amp; Dress Rentals in Mysore | RentOnTrip" />
+  <meta property="og:title" content="Self-drive Cars, Bikes &amp; Dress Rentals in Mysore | RentOnTrip" />
   <meta property="og:description"
-    content="Unified car, bike, and dress rentals in Mysore: local vendor catalogs in one app—compare price, model, and more. Rama Iyer Road, Ballal Circle." />
-  <meta property="og:image" content="https://rentontrip.com/car_rentals.jpeg" />
+    content="Self-drive cars and bikes, plus dress rentals in Mysore: local vendor catalogs in one app—compare price, model, and more. Rama Iyer Road, Ballal Circle." />
+  <meta property="og:image" content="https://rentontrip.com/images/car_rentals.jpeg" />
   <meta property="og:locale" content="en_IN" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Car, Bike &amp; Dress Rentals in Mysore | RentOnTrip" />
+  <meta name="twitter:title" content="Self-drive Cars, Bikes &amp; Dress Rentals in Mysore | RentOnTrip" />
   <meta name="twitter:description"
-    content="Unified car, bike, and dress rentals in Mysore—local vendor catalogs in one app. Compare by price, model, and more. Download on the Play Store." />
-  <meta name="twitter:image" content="https://rentontrip.com/car_rentals.jpeg" />
+    content="Self-drive cars and bikes, plus dress rentals in Mysore—local vendor catalogs in one app. Compare by price, model, and more. Download on the Play Store." />
+  <meta name="twitter:image" content="https://rentontrip.com/images/car_rentals.jpeg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "RentOnTrip",
-    "description": "Unified rental platform in Mysore for cars, bikes, and dresses—local vendor catalogs in one app to compare price, model, and more.",
+    "description": "Unified rental platform in Mysore for self-drive cars and bikes, plus dress rentals—local vendor catalogs in one app to compare price, model, and more.",
     "url": "https://rentontrip.com/",
-    "image": "https://rentontrip.com/car_rentals.jpeg",
+    "image": "https://rentontrip.com/images/car_rentals.jpeg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Rama Iyer Road, Ballal Circle",
@@ -49,514 +49,73 @@
     }
   }
   </script>
-
-  <style>
-    :root {
-      --ink: #0c1222;
-      --ink-muted: #5c6578;
-      --surface: #ffffff;
-      --surface-2: #f0f4f8;
-      --border: rgba(12, 18, 34, 0.08);
-      --hero-bg: #060a12;
-      --accent: #3b82f6;
-      --accent-bright: #60a5fa;
-      --cta: #10b981;
-      --cta-hover: #059669;
-      --radius: 14px;
-      --radius-lg: 22px;
-      --shadow: 0 4px 24px rgba(12, 18, 34, 0.06);
-      --shadow-hover: 0 12px 40px rgba(12, 18, 34, 0.1);
-      --max: 1120px;
-      --nav-h: 64px;
-    }
-
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
-      background: var(--surface-2);
-      color: var(--ink);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .site-nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      height: var(--nav-h);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 clamp(20px, 4vw, 40px);
-      background: rgba(6, 10, 18, 0.72);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    }
-
-    .site-nav__brand {
-      font-weight: 700;
-      font-size: 1.15rem;
-      letter-spacing: -0.02em;
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .site-nav__brand span {
-      color: var(--accent-bright);
-    }
-
-    .site-nav__cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      padding: 10px 18px;
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: #fff;
-      text-decoration: none;
-      background: var(--cta);
-      border-radius: 999px;
-      transition: background 0.2s, transform 0.2s;
-    }
-
-    .site-nav__cta:hover {
-      background: var(--cta-hover);
-      transform: translateY(-1px);
-    }
-
-    .hero {
-      position: relative;
-      margin-top: calc(-1 * var(--nav-h));
-      padding: calc(var(--nav-h) + clamp(48px, 10vw, 96px)) clamp(20px, 4vw, 40px) clamp(64px, 12vw, 120px);
-      text-align: center;
-      color: #fff;
-      overflow: hidden;
-      background:
-        radial-gradient(ellipse 80% 60% at 50% -20%, rgba(59, 130, 246, 0.35), transparent),
-        radial-gradient(ellipse 60% 50% at 100% 50%, rgba(16, 185, 129, 0.12), transparent),
-        radial-gradient(ellipse 50% 40% at 0% 80%, rgba(59, 130, 246, 0.15), transparent),
-        var(--hero-bg);
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-      background-size: 48px 48px;
-      mask-image: linear-gradient(to bottom, black 0%, transparent 85%);
-      pointer-events: none;
-    }
-
-    .hero__inner {
-      position: relative;
-      z-index: 2;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .hero__eyebrow {
-      display: inline-block;
-      margin-bottom: 1rem;
-      padding: 6px 14px;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.85);
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 999px;
-    }
-
-    .hero h1 {
-      margin: 0 0 1rem;
-      font-size: clamp(2.25rem, 6vw, 3.35rem);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
-    }
-
-    .hero__lead {
-      margin: 0 auto 1.5rem;
-      max-width: 560px;
-      font-size: clamp(1rem, 2.2vw, 1.2rem);
-      color: rgba(255, 255, 255, 0.78);
-      line-height: 1.55;
-    }
-
-    .hero__pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      justify-content: center;
-      margin-bottom: 2rem;
-    }
-
-    .hero__pill {
-      padding: 8px 16px;
-      font-size: 0.8125rem;
-      font-weight: 500;
-      color: rgba(255, 255, 255, 0.9);
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 999px;
-    }
-
-    .hero__actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .cta {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      padding: 15px 28px;
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: #fff;
-      text-decoration: none;
-      background: var(--cta);
-      border-radius: 999px;
-      border: none;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
-      box-shadow: 0 4px 20px rgba(16, 185, 129, 0.35);
-    }
-
-    .cta:hover {
-      background: var(--cta-hover);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 28px rgba(16, 185, 129, 0.4);
-    }
-
-    .cta--ghost {
-      background: transparent;
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      box-shadow: none;
-    }
-
-    .cta--ghost:hover {
-      background: rgba(255, 255, 255, 0.08);
-      border-color: rgba(255, 255, 255, 0.4);
-      box-shadow: none;
-    }
-
-    .hero__decor {
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      z-index: 1;
-    }
-
-    .car {
-      top: auto;
-      bottom: clamp(12px, 5vw, 8%);
-      width: min(400px, 55vw);
-      left: -200px;
-      position: absolute;
-      z-index: 2;
-      animation: driveAcross 8s ease-in-out infinite;
-      opacity: 0.85;
-      display: flex;
-      align-items: flex-end;
-    }
-
-    /* Rig wraps image + wheels so wheels share the car’s position and animation */
-    .car__rig {
-      position: relative;
-      width: 50%;
-      flex-shrink: 0;
-    }
-
-    .car-img {
-      width: 100%;
-      height: auto;
-      display: block;
-      animation: carBounce 1s linear infinite;
-      filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.35));
-    }
-
-    .car__wheel {
-      position: absolute;
-      /* Anchor bottom of wheel graphic up into wheel wells (PNG-dependent) */
-      bottom: 6%;
-      width: 22%;
-      max-width: 36px;
-      height: auto;
-      object-fit: contain;
-      animation: wheelRotate 0.5s linear infinite;
-      pointer-events: none;
-      transform-origin: center center;
-    }
-
-    .car__wheel--back {
-      left: 8%;
-    }
-
-    .car__wheel--front {
-      left: 68%;
-    }
-
-    @keyframes driveAcross {
-      0% { left: -200px; opacity: 0; }
-      8% { opacity: 0.85; }
-      92% { opacity: 0.85; }
-      100% { left: calc(100% + 200px); opacity: 0; }
-    }
-
-    @keyframes carBounce {
-      0%, 100% { transform: translateY(-1px); }
-      50% { transform: translateY(1px); }
-    }
-
-    @keyframes wheelRotate {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    .section {
-      padding: clamp(56px, 8vw, 88px) clamp(20px, 4vw, 40px);
-    }
-
-    .section__inner {
-      max-width: var(--max);
-      margin: 0 auto;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: clamp(36px, 5vw, 52px);
-    }
-
-    .section-title .eyebrow {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-
-    .section-title h2 {
-      margin: 0 0 0.5rem;
-      font-size: clamp(1.65rem, 3.5vw, 2.1rem);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: var(--ink);
-    }
-
-    .section-title .sub {
-      margin: 0;
-      max-width: 520px;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 1.05rem;
-      color: var(--ink-muted);
-    }
-
-    .section--surface {
-      background: var(--surface);
-    }
-
-    .section--muted {
-      background: var(--surface-2);
-    }
-
-    .intro-local {
-      max-width: 720px;
-      margin: 0 auto;
-      font-size: 1.0625rem;
-      line-height: 1.7;
-      color: var(--ink-muted);
-    }
-
-    .intro-local p {
-      margin: 0 0 1.15rem;
-    }
-
-    .intro-local p:last-child {
-      margin-bottom: 0;
-    }
-
-    .intro-local strong {
-      color: var(--ink);
-      font-weight: 600;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
-      gap: clamp(20px, 3vw, 28px);
-    }
-
-    .card {
-      background: var(--surface);
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-hover);
-      border-color: rgba(59, 130, 246, 0.15);
-    }
-
-    .card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      padding: 1.35rem 1.5rem 1.5rem;
-    }
-
-    .card-content h3 {
-      margin: 0 0 0.5rem;
-      font-size: 1.2rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: var(--ink);
-    }
-
-    .card-content p {
-      margin: 0;
-      font-size: 0.95rem;
-      color: var(--ink-muted);
-      line-height: 1.6;
-    }
-
-    .feature-card {
-      padding: 1.75rem 1.5rem;
-      text-align: left;
-    }
-
-    .feature-card__icon {
-      width: 48px;
-      height: 48px;
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 12px;
-      background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(16, 185, 129, 0.08));
-      color: var(--accent);
-    }
-
-    .feature-card__icon svg {
-      width: 26px;
-      height: 26px;
-    }
-
-    footer {
-      background: var(--hero-bg);
-      color: #94a3b8;
-      padding: clamp(48px, 8vw, 72px) clamp(20px, 4vw, 40px) 32px;
-    }
-
-    .footer__inner {
-      max-width: var(--max);
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .footer__logo {
-      font-weight: 700;
-      font-size: 1.25rem;
-      color: #fff;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.5rem;
-    }
-
-    .footer__tagline {
-      margin: 0 0 1.5rem;
-      font-size: 0.95rem;
-      color: rgba(255, 255, 255, 0.55);
-    }
-
-    .footer-address {
-      max-width: 420px;
-      margin: 0 auto 0.75rem;
-      line-height: 1.65;
-      font-size: 0.9rem;
-      color: #cbd5e1;
-    }
-
-    .footer-address strong {
-      color: #e2e8f0;
-    }
-
-    .footer-step {
-      margin: 0 0 1.5rem;
-      font-size: 0.875rem;
-      color: rgba(148, 163, 184, 0.95);
-    }
-
-    .footer__copy {
-      margin: 0;
-      padding-top: 1.5rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      font-size: 0.8125rem;
-      color: #64748b;
-    }
-
-    @media (max-width: 768px) {
-      .car {
-        width: min(280px, 70vw);
-        bottom: 10px;
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is RentOnTrip?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RentOnTrip is a unified rental platform for self-drive cars, self-drive bikes, and dress rentals in Mysore (Mysuru). It brings together catalogs from trusted local vendors in one Android app so you can compare by price, model, and other preferences."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What can I rent on RentOnTrip?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can explore self-drive cars, self-drive bikes (two-wheelers), and dresses including traditional and ethnic wear from vendors listed on the platform. Availability and models depend on what local partners offer at any given time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do vendors work on RentOnTrip?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RentOnTrip lists inventory from local vendors across Mysore. You browse their offerings in the app, compare options, and complete booking flows as provided by the platform and the vendor."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I download the RentOnTrip app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Download RentOnTrip from the Google Play Store on Android. Use the Download on Play Store button on this website to open the store listing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are rental prices decided?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pricing depends on the vendor, vehicle or outfit, and rental duration such as hourly, daily, or occasion-based plans. Use the app to view current options and compare before booking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is RentOnTrip located?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RentOnTrip is based at Rama Iyer Road, Ballal Circle, Mysore, Karnataka, India. The team is incubated at SJCE STEP, Mysore."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who operates RentOnTrip?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RentOnTrip is operated by Pritha Technologies. The service focuses on rentals in Mysore and nearby areas."
+        }
       }
+    ]
+  }
+  </script>
 
-      .car__wheel {
-        max-width: 28px;
-        width: 24%;
-        bottom: 8%;
-      }
+  <link rel="stylesheet" href="styles.css" />
 
-      .car__wheel--back {
-        left: 9%;
-      }
-
-      .car__wheel--front {
-        left: 69%;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero__actions {
-        flex-direction: column;
-        width: 100%;
-      }
-
-      .cta,
-      .cta--ghost {
-        width: 100%;
-        max-width: 320px;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -570,19 +129,19 @@
     <div class="hero__decor" aria-hidden="true">
       <div class="car">
         <div class="car__rig">
-          <img src="car.png" class="car-img" alt="" />
-          <img src="wheel.png" class="car__wheel car__wheel--back" alt="" />
-          <img src="wheel.png" class="car__wheel car__wheel--front" alt="" />
+          <img src="images/car.png" class="car-img" alt="" />
+          <img src="images/wheel.png" class="car__wheel car__wheel--back" alt="" />
+          <img src="images/wheel.png" class="car__wheel car__wheel--front" alt="" />
         </div>
       </div>
     </div>
     <div class="hero__inner">
       <p class="hero__eyebrow">Mysore · Unified rentals</p>
-      <h1>RentOnTrip — one app for cars, bikes &amp; dresses</h1>
-      <p class="hero__lead">Car rental, bike rental, and dress rentals in Mysore — browse trusted local vendors, compare by price and model, and book your way.</p>
+      <h1>RentOnTrip — one app for self-drive cars, bikes &amp; dresses</h1>
+      <p class="hero__lead">Self-drive cars, self-drive bikes, and dress rentals in Mysore — browse trusted local vendors, compare by price and model, and book your way.</p>
       <div class="hero__pills" role="list">
-        <span class="hero__pill" role="listitem">Cars</span>
-        <span class="hero__pill" role="listitem">Bikes</span>
+        <span class="hero__pill" role="listitem">Self-drive cars</span>
+        <span class="hero__pill" role="listitem">Self-drive bikes</span>
         <span class="hero__pill" role="listitem">Dresses &amp; ethnic wear</span>
       </div>
       <div class="hero__actions">
@@ -602,7 +161,7 @@
       </div>
       <div class="intro-local">
         <p>
-          <strong>RentOnTrip</strong> is a unified rental platform for <strong>car rentals</strong>, <strong>bike rentals</strong>, and <strong>dress rentals</strong> in Mysore. We bring together catalogs from trusted local vendors in one app, so customers can compare options and rent on their terms—by <strong>price</strong>, <strong>model</strong>, and whatever else matters to them.
+          <strong>RentOnTrip</strong> is a unified rental platform for <strong>self-drive cars</strong>, <strong>self-drive bikes</strong>, and <strong>dress rentals</strong> in Mysore. We bring together catalogs from trusted local vendors in one app, so customers can compare options and rent on their terms—by <strong>price</strong>, <strong>model</strong>, and whatever else matters to them.
         </p>
         <p>
           We are based at <strong>Rama Iyer Road, Ballal Circle, Mysore</strong>, and are an <strong>incubated startup at SJCE STEP</strong> — focused on building a trusted rental experience for Mysuru and beyond.
@@ -621,7 +180,7 @@
 
       <div class="grid">
         <article class="card">
-          <img src="dress_rentals.jpg" alt="Dress and ethnic wear rental in Mysore via RentOnTrip" width="400" height="220" loading="lazy" />
+          <img src="images/dress_rentals.jpg" alt="Dress and ethnic wear rental in Mysore via RentOnTrip" width="400" height="220" loading="lazy" />
           <div class="card-content">
             <h3>Dress rentals</h3>
             <p>Traditional wear, party dresses, and designer outfits at affordable prices — ideal for events across Mysuru.</p>
@@ -629,18 +188,18 @@
         </article>
 
         <article class="card">
-          <img src="bike_rentals.png" alt="Bike rental in Mysore — two-wheelers on flexible plans" width="400" height="220" loading="lazy" />
+          <img src="images/bike_rentals.png" alt="Self-drive bike rental in Mysore — two-wheelers on flexible plans" width="400" height="220" loading="lazy" />
           <div class="card-content">
-            <h3>Bike rentals</h3>
-            <p>Explore Mysore and beyond with well-maintained bikes on flexible hourly or daily plans.</p>
+            <h3>Self-drive bikes</h3>
+            <p>Explore Mysore and beyond with well-maintained bikes for self-drive on flexible hourly or daily plans.</p>
           </div>
         </article>
 
         <article class="card">
-          <img src="car_rentals.jpeg" alt="Car rental in Mysore — comfortable cars for trips and events" width="400" height="220" loading="lazy" />
+          <img src="images/car_rentals.jpeg" alt="Self-drive car rental in Mysore — comfortable cars for trips and events" width="400" height="220" loading="lazy" />
           <div class="card-content">
-            <h3>Car rentals</h3>
-            <p>Comfortable, reliable cars for outstation trips, weddings, and daily needs around Mysore.</p>
+            <h3>Self-drive cars</h3>
+            <p>Comfortable, reliable cars for self-drive—outstation trips, weddings, and daily needs around Mysore.</p>
           </div>
         </article>
       </div>
@@ -659,7 +218,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75a2.25 2.25 0 012.25-2.25h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25v-2.25z" /></svg>
           </div>
           <h3>One app, multiple rentals</h3>
-          <p>No more switching platforms. Rent bikes, cars, and dresses in Mysore from one app.</p>
+          <p>No more switching platforms. Self-drive cars, self-drive bikes, and dress rentals in Mysore from one app.</p>
         </article>
         <article class="card feature-card">
           <div class="feature-card__icon" aria-hidden="true">
@@ -676,6 +235,87 @@
           <p>Hourly, daily, and occasion-based rentals to suit your needs.</p>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section class="section section--muted faq-section" id="faq" aria-labelledby="faq-heading">
+    <div class="section__inner">
+      <div class="section-title">
+        <span class="eyebrow">Help</span>
+        <h2 id="faq-heading">Frequently asked questions</h2>
+        <p class="sub">Quick answers about RentOnTrip in Mysore</p>
+      </div>
+      <div class="faq">
+        <details class="faq__item">
+          <summary>What is RentOnTrip?</summary>
+          <div class="faq__answer">
+            <p>RentOnTrip is a unified rental platform for <strong>self-drive cars</strong>, <strong>self-drive bikes</strong>, and <strong>dress rentals</strong> in Mysore (Mysuru). We bring together catalogs from trusted local vendors in one Android app so you can compare options by price, model, and what matters to you.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary>What can I rent on RentOnTrip?</summary>
+          <div class="faq__answer">
+            <p>You can explore <strong>self-drive cars</strong>, <strong>self-drive bikes</strong> (two-wheelers), and <strong>dresses</strong> including traditional and ethnic wear from vendors on the platform. What you see in the app depends on listings from local partners at that time.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary>How do local vendors work on the platform?</summary>
+          <div class="faq__answer">
+            <p>RentOnTrip lists inventory from vendors across Mysore. You browse their offerings in the app, compare choices, and follow the booking steps in the app. Vendors set their own listings; we help you discover and compare them in one place.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary>How do I download the app?</summary>
+          <div class="faq__answer">
+            <p>RentOnTrip is available on <strong>Android</strong> via the Google Play Store. Tap <strong>Download on Play Store</strong> in the header of this page or search for RentOnTrip in the Play Store.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary>How are rental prices decided?</summary>
+          <div class="faq__answer">
+            <p>Pricing depends on the <strong>vendor</strong>, <strong>vehicle or outfit</strong>, and <strong>rental duration</strong> (hourly, daily, or occasion-based). Use the app to view current options and compare before you book.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary>Where is RentOnTrip based?</summary>
+          <div class="faq__answer">
+            <p>We are based at <strong>Rama Iyer Road, Ballal Circle, Mysore, Karnataka, India</strong>. RentOnTrip is an incubated startup at <strong>SJCE STEP</strong>, Mysore.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary>Who operates RentOnTrip?</summary>
+          <div class="faq__answer">
+            <p>RentOnTrip is operated by <strong>Pritha Technologies</strong>, focused on building a trusted rental experience for Mysuru and nearby areas.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface partners" aria-labelledby="partners-heading">
+    <div class="section__inner">
+      <div class="section-title">
+        <span class="eyebrow">Partners</span>
+        <h2 id="partners-heading">Supported by</h2>
+        <p class="sub">Proud to work with organisations that back innovation and local enterprise</p>
+      </div>
+      <ul class="partners__list">
+        <li class="partners__item partners__item--step">
+          <a href="https://sjce.ac.in/step" target="_blank" rel="noopener noreferrer">
+            <img src="images/sjce_step_logo.png" alt="SJCE STEP — Science &amp; Technology Entrepreneurs Park, Mysore" width="160" height="120" loading="lazy" decoding="async" />
+          </a>
+        </li>
+        <li class="partners__item partners__item--dpiit">
+          <a href="https://www.startupindia.gov.in/" target="_blank" rel="noopener noreferrer">
+            <img src="images/dpiit_header.png" alt="DPIIT — Department for Promotion of Industry and Internal Trade, Startup India" width="300" height="80" loading="lazy" decoding="async" />
+          </a>
+        </li>
+        <li class="partners__item partners__item--kar">
+          <a href="https://startup.karnataka.gov.in/" target="_blank" rel="noopener noreferrer">
+            <img src="images/startup_karnataka.png" alt="Startup Karnataka — Government of Karnataka" width="280" height="80" loading="lazy" decoding="async" />
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 
